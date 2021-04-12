@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/styles.css"],"names":[],"mappings":"AAAA,IACI,iBAAkB,CAClB,UACF,CAEF,WACE,cAAe,CACf,WAAY,CACZ,QAAW,CACX,SACF","file":"main.a82d1906.chunk.css","sourcesContent":["img {\r\n    border-radius: 50%;\r\n    width: 50px;\r\n  }\r\n\r\n.container {\r\n  max-width: 100%;\r\n  height: 100%;\r\n  margin: 0px;\r\n  padding: 0px;\r\n}\r\n"]}
