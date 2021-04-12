@@ -86,16 +86,16 @@ export default function MyPostList(props){
       <Row>
         <Col xs="7">
           <CardTitle tag="center"><Alert color="primary"><strong>Mis Posts publicados </strong><Badge pill>{posts.length}</Badge></Alert></CardTitle>
-          <Table>
+          <Table id="card">
             <tbody>
               { posts.map((post, index) => {
                 return(<div>
                   <div>
                   <Row>
                     <Col>
-                      <Card>
-                        <CardBody>
-                          <Row><Col><strong><img src={post.image} alt="Img"/> {post.user}</strong></Col>
+                      <Card id="carta">
+                        <CardBody >
+                          <Row><Col id="text"><strong><img src={post.image} alt="Img"/> {post.user}</strong></Col>
                                <Col align="right">
                                   <Button outline onClick={() => handleShowEdit(post)}><FaEdit /></Button>
                                   {' '}
@@ -103,21 +103,21 @@ export default function MyPostList(props){
                                 </Col>
                                 </Row>
                           <Row>
-                            <Col>
+                            <Col id="text">
                               {post.message}
                             </Col>
                           </Row>
                           <Row>
                             <Col align="left" xs= "8">
                               <Row>
-                                <Col xs="2"><BsChat /></Col>
-                                <Col xs="2"><AiOutlineRetweet /><small>{Math.floor((Math.random() * 10) + 1)}</small></Col>
-                                <Col xs="2"><AiOutlineHeart /><small>{Math.floor((Math.random() * 100) + 1)}</small></Col>
-                                <Col xs="2"><BsUpload/></Col>
+                                <Col id="text" xs="2"><BsChat /></Col>
+                                <Col id="text" xs="2"><AiOutlineRetweet /><small>{Math.floor((Math.random() * 10) + 1)}</small></Col>
+                                <Col id="text" xs="2"><AiOutlineHeart /><small>{Math.floor((Math.random() * 100) + 1)}</small></Col>
+                                <Col id="text" xs="2"><BsUpload/></Col>
                               </Row>
                             </Col>
-                            <Col align="right">
-                              <small>{getDateInStrFormat(new Date(post.publicationdate))}</small>
+                            <Col id="text2">
+                              {getDateInStrFormat(new Date(post.publicationdate))}
                             </Col>
                           </Row>
                         </CardBody>

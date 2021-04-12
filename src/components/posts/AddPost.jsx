@@ -25,12 +25,12 @@ export default function AddPost(props){
   }
 
   return (
-    <div>
-      <Card body>
-        <CardTitle tag="h5">Añadir un nuevo post</CardTitle>
+    <div style={{height: '200px', paddingTop:'5%',paddingRight:'5%'}}>
+      <Card body id="carta">
+        <CardTitle id="text" tag="h5">Añadir un nuevo post</CardTitle>
         <Form>
           <FormGroup>
-            <Label for="aMensaje">Mensaje</Label>
+            <Label id="text" for="aMensaje">Mensaje:</Label>
             <Input style={{height: '200px'}} type="textarea" name="message" value={message} id="aMensaje" placeholder="Introduce un mensaje" onChange={(e) => setMessage(e.target.value)}/>
           </FormGroup>
           <Button color="primary" onClick={addPost}>Añadir</Button>

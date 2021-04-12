@@ -27,7 +27,7 @@ export default function Home(props){
   }
   else{
     return (
-      <Container>
+      <Container id="principal">
         <Row>
           <Col><HeaderDashboard onLogout={handleLogout} onShow= {handleOnShow} /></Col>
         </Row>

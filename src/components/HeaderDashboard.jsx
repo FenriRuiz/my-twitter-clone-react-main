@@ -8,7 +8,7 @@ import config from '../config.js';
 export default function HeaderDashboard(props){
 
   return (
-    <Navbar color="primary" light expand="md">
+    <Navbar fixed="top" color="primary" light expand="lg">
       <NavbarBrand><FaCogs color="white"/><span className="text-white"><strong> Dashboard:</strong> {sessionStorage.getItem('name')}</span></NavbarBrand>
       <Collapse navbar>
         <Nav className="ml-auto" navbar>
